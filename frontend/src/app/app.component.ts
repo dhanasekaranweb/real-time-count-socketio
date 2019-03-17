@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   constructor(private socketservice:SocketService){}
 
   ngOnInit(){
-  	this.socketservice.getCount().subscribe(message => {
+  	this.socketservice.getCount().subscribe((message:any) => {
       this.count = message.count
       console.log(message)
     })

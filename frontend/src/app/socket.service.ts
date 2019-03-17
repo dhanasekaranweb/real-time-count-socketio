@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable,of } from 'rxjs/Observable';
+import { Observable } from 'rxjs/Observable';
 import * as io from 'socket.io-client';
 
 @Injectable({
