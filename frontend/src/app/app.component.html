@@ -1,0 +1,37 @@
+<style type="text/css">
+  .box{
+    height: 150px;
+    width: 150px;
+    background: #d4973c;
+    border-radius: 6px;
+    margin-top: 30px;
+  }
+  .count{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    top: 51px;
+    position: relative;
+  }
+  .text{
+    top: 73px;
+    margin-left: 57px;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+  }
+</style>
+
+<div class="container">
+  <div class="row">
+    <h2>To get real time count using SocketIO</h2>
+    <div class="box">
+      <span class="count">{{count}}</span>
+      <span class="text">count</span>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
