@@ -19,6 +19,13 @@ app.get('/',(req,res) => {
 
 })
 
+/*
+http://domain:port/api/count
+post method to hit the api and pass the count in "count -> params"
+you have to use in real time also where to emit the count use there io.emit
+the count or notification push to client
+*/
+
 app.post('/api/count',(req,res) => {
 	const body = req.body
 	const count = body.count

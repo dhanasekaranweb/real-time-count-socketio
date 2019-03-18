@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(){
   	this.socketservice.getCount().subscribe((message:any) => {
+      /*update stuff here*/
       this.count = message.count
       console.log(message)
     })
